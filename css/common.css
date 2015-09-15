@@ -1,0 +1,137 @@
+/*Trying to add a new font*/
+@font-face {
+  font-family: "Skola Sans";
+  src: url(../fonts/SkolaSans-Regular.otf);
+}
+
+* {
+    font-family: "Skola Sans";
+    color: #993300;
+}
+
+textarea {
+    resize: none;
+}
+
+#par {
+    text-indent: 5em;
+    line-height: 1.5;
+}
+
+h1 {
+    color: #993300;
+}
+
+body {
+    background-color: #fefeeb;
+}
+
+#text-wrapper {
+	margin-left: 3em;
+	margin-right: 3em;
+}
+
+#text-wrapper p {
+	text-align: justify;
+}
+
+#icompass-button {
+	padding: 15px;
+	margin: 15px;
+	font-size: 16pt;
+	width: 70%;
+	background-color: #ef8a13;
+	color: #f0f0f0;
+	border-radius: 5px;
+	border: none;
+}
+
+#button-start-esas:focus {
+	outline: 0;
+}
+
+#table-personal-info {
+	width: 80%;
+	margin: 2em;
+	margin-top: 0em;
+	border-collapse: collapse;
+}
+
+#table-personal-info  td {
+	border: 0px solid #b0b0b0;
+	padding: 10px;
+	vertical-align: top;
+}
+
+#table-personal-info #info {
+}
+
+#table-personal-info #label {
+    width: 20%;
+}
+
+#profile-pic {
+	width: 9em;
+	height:9em;
+	padding: 5px;
+	border-radius: 100%;
+	border: 1px solid #c0c0c0;
+	background-color: #ffffff;
+}
+
+.message-list {
+    text-align: justify;
+    padding-left: 3em;
+    padding-right: 3em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+#pic-and-name-wrapper-table {
+    border-collapse: collapse;
+    width:  80%;
+}
+
+#pic-and-name-wrapper-table td{
+    padding: 1px;
+}
+
+#doctor-info-wrapper-table {
+    border-collapse: collapse;
+    width: 80%;
+}
+
+#doctor-info-wrapper-table td {
+    padding: 5px;
+}
+
+#doctor-pic {
+    width: 7em;
+}
+
+
+#doctor-name-beside-pic {
+    font-size: 150%;
+}
+
+
+#list-doctor-wrapper {
+    border-collapse: collapse;
+    width: 70%;
+}
+
+#list-doctor-wrapper td {
+    border: 0px solid black;
+    padding: 10px;
+    vertical-align: middle;
+}
+
+#doctor-pic-column {
+    width: 30%;
+}
+
+
+#prescription-textarea {
+    padding: 1em;
+    line-height: 1.5;
+}

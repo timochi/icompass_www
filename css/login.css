@@ -1,0 +1,42 @@
+*{
+	font-size: 1.2em;
+	font-family: Arial, Sans-serif;
+}
+@media only screen and (max-width: 480px) {
+	*{
+	font-size: 1em;
+	font-family: Arial, Sans-serif;
+	}
+}
+#fore{
+	background-color:#FFA500;
+	overflow:auto;
+}
+#contents{
+	text-align:center;
+	margin-left: -3%;
+	margin-top: 10%;
+}
+.lg_field{
+	border:0px;
+	border-bottom:1px solid white;
+	margin-bottom: 30px;
+	text-align: center;
+	background-color: #FFA500;
+	color:white;
+	outline:0;
+}
+#logo{
+	width:30%;
+	height:auto;
+	vertical-align:middle;
+	position:relative;
+	padding-bottom: 50px;
+}
+.form_reals{
+text-align: center;
+}
+.btn{
+	border-radius:10px;
+	border:1px;
+}
