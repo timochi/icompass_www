@@ -1,9 +1,9 @@
-#slider {
+.slider {
     -webkit-appearance: none;
     width: 40%;
 }
 
-#slider::-webkit-slider-thumb {
+.slider::-webkit-slider-thumb {
     -webkit-appearance: none;
     border: 1px solid #808080;
     height: 20px;
@@ -15,11 +15,11 @@
     box-shadow: 1px 1px 1px #c0c0c0;
 }
 
-#slider:focus {
+.slider:focus {
     outline: none;
 }
 
-#slider::-webkit-slider-runnable-track {
+.slider::-webkit-slider-runnable-track {
     width: 40%;
     height: 10px;
     cursor: pointer;
