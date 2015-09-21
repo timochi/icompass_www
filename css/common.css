@@ -133,6 +133,7 @@ body {
 #prescription-textarea {
     padding: 1em;
     line-height: 1.5;
+    width: 80%;
 }
 
 #admin-message{
