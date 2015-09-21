@@ -134,3 +134,8 @@ body {
     padding: 1em;
     line-height: 1.5;
 }
+
+#admin-message{
+    height: 165px;
+    width: 310px;
+}
