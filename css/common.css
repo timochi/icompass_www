@@ -135,22 +135,3 @@ body {
     padding: 1em;
     line-height: 1.5;
 }
-
-#message-to-table {
-    width: 80%;
-    border-collapse: collapse;
-}
-
-#message-to-table td{
-    vertical-align: middle;
-    border: 1px solid grey;
-}
-
-#direct-message-recipient-field {
-    padding: 5px;
-}
-
-#direct-message-textarea {
-    line-height: 1.5;
-    width: 98%;
-}
