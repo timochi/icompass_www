@@ -1,36 +1,37 @@
-<table id="register-patient-step1-table">
-                    <tr>
-                        <td id="info">Username:</td>
-                        <td id="textfield"><input type="text"></td>
-                    </tr>
+<style>
+    #table-create-doctor-step2 {
+        border-collapse: collapse;
+    }
 
-                    <tr>
-                        <td id="info">Last name:</td>
-                        <td id="textfield"><input type="text"></td>
-                    </tr>
+    #table-create-doctor-step2 .cell {
+        border: 1px solid black;
+    }
 
-                    <tr>
-                        <td id="info">First name:</td>
-                        <td id="textfield"><input type="text"></td>
-                    </tr>
+    #table-name-diagnosis {
+        border-collapse: collapse;
+    }
 
-                    <tr>
-                        <td id="info">Middle name:</td>
-                        <td id="textfield"><input type="text"></td>
-                    </tr>
+    #table-name-diagnosis .cell{
+        border: 1px solid black;
+    }
+</style>
 
-                    <tr>
-                        <td id="info">Specialty:</td>
-                        <td id="textfield"><input type="text"></td>
-                    </tr>
+<table id="table-create-doctor-step2">
+    <tr>
+        <td class="cell"><input type="checkbox"></td>
+        <td class="cell"><img src="../img/patient0.png"></td>
+        <td class="cell">
+            <table id="table-name-diagnosis">
+                <tr>
+                    <td class="cell">Name:</td>
+                    <td class="cell">Amor C. Powers</td>
+                </tr>
 
-                    <tr>
-                        <td id="info">Clinic hours:</td>
-                        <td id="textfield"><input type="text"></td>
-                    </tr>
-
-                    <tr>
-                        <td id="info">Contact number:</td>
-                        <td id="textfield"><input type="text"></td>
-                    </tr>
-                </table>
+                <tr>
+                    <td class="cell">Diagnosis:</td>
+                    <td class="cell">Some disease</td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+</table>
