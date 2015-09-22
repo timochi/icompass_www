@@ -1,0 +1,162 @@
+<style>
+    #register-patient-step-1 {
+
+    }
+
+    #register-patient-step-2 {
+        display: none;
+    }
+
+    #register-patient-step-3 {
+        display: none;
+    }
+</style>
+
+<script>
+    $(document).ready(function(){
+        var step=1;
+        $("#nexter").click(function(){
+            $("#register-patient-step-"+step).hide();
+            step++;
+            $("#register-patient-step-"+step).show();
+            if(step===3){
+                $("#nexter").hide();
+                $("#sub").show();
+            }
+            else if(step===1){
+                $("#prev").hide();
+                $("#nexter").show();
+            }
+            else if(step===2){
+                $("#prev").show();
+                $("#sub").hide();
+                $("#nexter").show();
+            }
+        });
+        $("#prev").click(function(){
+               $("#register-patient-step-"+step).hide();
+                step--;
+                $("#register-patient-step-"+step).show();
+            if(step===3){
+                $("#nexter").hide();
+                $("#sub").show();
+            }
+            else if(step===1){
+                $("#prev").hide();
+                $("#nexter").show();
+            }
+            else if(step===2){
+                $("#prev").show();
+                $("#sub").hide();
+                $("#nexter").show();
+            }
+            });
+
+    });
+</script>
+
+<table>
+    <tr>
+        <td>
+            <div id="register-patient-step-1">
+                <table>
+                    <tr>
+                        <td>Username:</td>
+                        <td><input type="text"></td>
+                    </tr>
+
+                    <tr>
+                        <td>Last name:</td>
+                        <td><input type="text"></td>
+                    </tr>
+
+                    <tr>
+                        <td>First name:</td>
+                        <td><input type="text"></td>
+                    </tr>
+
+                    <tr>
+                        <td>Middle name:</td>
+                        <td><input type="text"></td>
+                    </tr>
+
+                    <tr>
+                        <td>Diagnosis:</td>
+                        <td><input type="text"></td>
+                    </tr>
+
+                    <tr>
+                        <td>Allergies:</td>
+                        <td><input type="text"></td>
+                    </tr>
+
+                    <tr>
+                        <td>Initial height:</td>
+                        <td><input type="text"></td>
+                    </tr>
+
+                    <tr>
+                        <td>Initial weight:</td>
+                        <td><input type="text"></td>
+                    </tr>
+
+                    <tr>
+                        <td>Birthdate:</td>
+                        <td><input type="text"></td>
+                    </tr>
+
+                    <tr>
+                        <td>Contact number:</td>
+                        <td><input type="text"></td>
+                    </tr>
+
+                    <tr>
+                        <td>Email address:</td>
+                        <td><input type="text"></td>
+                    </tr>
+                </table>
+</div>
+
+<div id="register-patient-step-2">
+    <table>
+        <tr>
+            <td><input type="checkbox"></td>
+            <td><img src="../img/patient0.png"></td>
+            <td>
+                <table>
+                    <tr>
+                        <td>Name:</td>
+                        <td>Amor C. Powers</td>
+                    </tr>
+
+                    <tr>
+                        <td>Specialty:</td>
+                        <td>Oncology</td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+</div>
+
+<div id="register-patient-step-3">
+    <textarea rows="5" cols="30">Gusto na po naming matapos yung SE at THESIS on-time.</textarea>
+</div>
+        </td>
+    </tr>
+
+    <tr>
+        <td>
+            <button id="prev" style="display:none">Previous</button>
+        </td>
+        <td>
+            <button id="nexter">Next</button>
+            <button id="sub" type="submit" style="display:none;">Submit</button>
+        </td>
+    </tr>
+</table>
+
+<br>
+<br>
+<br>
+<br>
