@@ -29,13 +29,13 @@
                 <div id="register-user-site-loader">
                     <script>
                         $(document).ready(function(){
-                            $('#register-user-site-loader').load('reg_patient_step1.html');
+                            $('#register-user-site-loader').load('register_patient.html');
 
                             $('#register-user-type-dropdown').change(function(){
                                 var user_type = $(this).find('option:selected').val();
 
                                 if(user_type == 'patient') {
-                                    $('#register-user-site-loader').load('');
+                                    $('#register-user-site-loader').load('register_patient.html');
                                 }
                                 else if(user_type == 'doctor') {
                                     $('#register-user-site-loader').load('');
