@@ -30,10 +30,11 @@
                 <div id="register-user-site-loader">
                     <script>
                         $(document).ready(function(){
-                            var user_type = $(this).find('option:selected').val();
-                            //$('#register-user-site-loader').load('reg_patient_step1.html');
+                            $('#register-user-site-loader').load('reg_patient_step1.html');
 
                             $('#register-user-type-dropdown').change(function(){
+                                var user_type = $(this).find('option:selected').val();
+
                                 if(user_type == 'patient') {
                                     $('#register-user-site-loader').load('reg_patient_step1.html');
                                 }
