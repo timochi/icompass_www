@@ -23,7 +23,6 @@
 
                     <select id="register-user-type-dropdown">
                         <option value="patient">Patient</option>
-                        <option value="admin">Admin</option>
                         <option value="doctor">Doctor</option>
                     </select>
                 </div>
@@ -37,9 +36,6 @@
 
                                 if(user_type == 'patient') {
                                     $('#register-user-site-loader').load('reg_patient_step1.html');
-                                }
-                                else if(user_type == 'admin') {
-                                    $('#register-user-site-loader').load('reg_patient_step3.html');
                                 }
                                 else if(user_type == 'doctor') {
 
