@@ -9,6 +9,7 @@
         <script src="../js/common.js"></script>
         <script src="../js/meth.js"></script>
     </head>
+
     <body>
         <div id="back">
 
@@ -26,22 +27,17 @@
                         <option value="doctor">Doctor</option>
                     </select>
                 </div>
-
-                <div id="register-user-content-loader">
+                <div id="register-user-site-loader">
                     <script>
                         $(document).ready(function(){
-                            $('#register-user-type-dropdown').change(function(){
-                                var user_type = $(this).find('option:selected').val();
-                                if(user_type == 'patient') {
-                                    alert("I am a Patient.");
-                                }
-                                else if (user_type == 'admin') {
-                                    alert("I am an Admin.");
-                                }
-                                else if (user_type == 'doctor') {
-                                    alert("I am the Doctor.");
-                                }
-                            });
+                            var user_type = $(this).find('option:selected').val();
+                            if(user_type == 'patient') {
+                                $('#register-user-site-loader').load('reg_patient_step1.html');
+                            }
+                            else if (user_type == 'admin') {
+                            }
+                            else if (user_type == 'doctor') {
+                            }
                         });
                     </script>
                 </div>
