@@ -19,17 +19,13 @@
             $("#register-patient-step-"+step).hide();
             step++;
             $("#register-patient-step-"+step).show();
-            if(step===3){
+            if(step===2){
                 $("#nexter").hide();
                 $("#sub").show();
+                $("#prev").show();
             }
             else if(step===1){
                 $("#prev").hide();
-                $("#nexter").show();
-            }
-            else if(step===2){
-                $("#prev").show();
-                $("#sub").hide();
                 $("#nexter").show();
             }
         });
@@ -37,18 +33,14 @@
                $("#register-patient-step-"+step).hide();
                 step--;
                 $("#register-patient-step-"+step).show();
-            if(step===3){
+            if(step===2){
                 $("#nexter").hide();
                 $("#sub").show();
             }
             else if(step===1){
                 $("#prev").hide();
                 $("#nexter").show();
-            }
-            else if(step===2){
-                $("#prev").show();
                 $("#sub").hide();
-                $("#nexter").show();
             }
             });
 
@@ -81,37 +73,17 @@
                     </tr>
 
                     <tr>
-                        <td>Diagnosis:</td>
+                        <td>Specialty:</td>
                         <td><input type="text"></td>
                     </tr>
 
                     <tr>
-                        <td>Allergies:</td>
-                        <td><input type="text"></td>
-                    </tr>
-
-                    <tr>
-                        <td>Initial height:</td>
-                        <td><input type="text"></td>
-                    </tr>
-
-                    <tr>
-                        <td>Initial weight:</td>
-                        <td><input type="text"></td>
-                    </tr>
-
-                    <tr>
-                        <td>Birthdate:</td>
+                        <td>Clinic hours:</td>
                         <td><input type="text"></td>
                     </tr>
 
                     <tr>
                         <td>Contact number:</td>
-                        <td><input type="text"></td>
-                    </tr>
-
-                    <tr>
-                        <td>Email address:</td>
                         <td><input type="text"></td>
                     </tr>
                 </table>
@@ -137,10 +109,6 @@
             </td>
         </tr>
     </table>
-</div>
-
-<div id="register-patient-step-3">
-    <textarea rows="5" cols="30">Gusto na po naming matapos yung SE at THESIS on-time.</textarea>
 </div>
         </td>
     </tr>
