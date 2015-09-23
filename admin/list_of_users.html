@@ -8,6 +8,7 @@
         <script src="../js/jquery.js"></script>
         <script src="../js/common.js"></script>
         <script src="../js/meth.js"></script>
+        <script src="../js/angular.js"></script>
     </head>
     <body>
         <div id="back">
@@ -25,51 +26,32 @@
                         <li class="button" id="button-doctors">Doctors</li>
                     </ul>
 
-                    <p id="par">Put the necessary javascript. Ginawa ko lang black yung click color para kita agad. Pakipalitan na lang.</p>
+                    <p id="par">Create a PHP script that contains the JSON of the data.</p>
 
-                    <p id="par">Create the layout for the list of users. Begin!</p>
+                    <p id="par">Let the Angular JS games begin.</p>
 
-                    <table id="view-users-patient-type">
-                        <tr>
-                            <td><img src="../img/patient0.png" width="65%"></td>
-                            <td>
-                                <!--Gawa ka ng panibagong table (4x4) sa loob-->
-                                <table>
-                                    <tr>
-                                        <td>Name:</td>
-                                        <td>Amor C. Powers</td>
-                                    </tr>
-
-                                    <tr>
-                                        <td>Diagnosis:</td>
-                                        <td>Some Disease</td>
-                                    </tr>
-                                </table>
-                            </td>
-                        </tr>
-                    </table>
-
-                    <table id="view-users-doctor-type">
-                        <tr>
-                            <td><img src="../img/patient0.png" width="65%"></td>
-                            <td>
-                                <!--Gawa ka ng panibagong table (4x4) sa loob-->
-                                <table>
-                                    <tr>
-                                        <td>Name:</td>
-                                        <td>Claudia C. Buenavista</td>
-                                    </tr>
-
-                                    <tr>
-                                        <td>Specialty:</td>
-                                        <td>Oncologist</td>
-                                    </tr>
-                                </table>
-                            </td>
-                        </tr>
-                    </table>
+                    <div ng-app="app1" ng-controller="ctrl1">
+                        <table>
+                            <tr ng-repeat="x in collection">
+                                <td>{{ x.Type }}</td>
+                                <td>{{ x.Name }}</td>
+                                <td>{{ x.Caption }}</td>
+                            </tr>
+                        </table>
+                    </div>
 
                     <script>
+                        //This is an AngularJS script for iterating rows.
+                        var app = angular.module('app1', []);
+                        app.controller('ctrl1', function($scope, $http){
+                            $http.get("http://10.242.163.150/dummy_json.php").success(function(response){
+                                $scope.collection = response.names;
+                            });
+                        });
+                    </script>
+
+                    <script>
+                        //This is a script for the button group.
                         $(document).ready(function(){
                             $('#button-all').click(function(){
                                 $('#button-all').css({
@@ -83,9 +65,6 @@
                                 $('#button-doctors').css({
                                     "background-color":"#ef8a13"
                                 });
-
-                                 $('#view-users-patient-type').show();
-                                 $('#view-users-doctor-type').show();
                             });
 
                             $('#button-patients').click(function(){
@@ -100,9 +79,6 @@
                                 $('#button-doctors').css({
                                     "background-color":"#ef8a13"
                                 });
-
-                                $('#view-users-patient-type').show();
-                                $('#view-users-doctor-type').hide();
                             });
 
                             $('#button-doctors').click(function(){
@@ -117,9 +93,6 @@
                                 $('#button-doctors').css({
                                     "background-color":"black"
                                 });
-
-                                $('#view-users-patient-type').hide();
-                                $('#view-users-doctor-type').show();
                             });
                         });
                     </script>
