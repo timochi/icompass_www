@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+        <script type="text/javascript" charset="utf-8" src="../cordova.js"></script>
+        <link rel="stylesheet" type="text/css" href="../css/prima.css">
+        <link rel="stylesheet" type="text/css" href="../css/common.css">
+        <script src="../js/jquery.js"></script>
+        <script src="../js/common.js"></script>
+        <script src="../js/meth.js"></script>
+    </head>
+    <body>
+        <div id="back">
+
+        </div>
+        <div id="fore">
+            <div id="cont">
+            <center>
+                <div id="text-wrapper">
+                    <h1>Powers, Amor Capistrano</h1>
+                    <p id="par">Please click on the button group below to start.</p>
+
+                    <form>
+
+                    </form>
+
+                    <!--Create divs for the content of each of the four buttons in the button group-->
+                    <div id="content-personal-info">
+                        <table>
+                            <tr>
+                                <td>Diagnosis:</td>
+                                <td>Some disease</td>
+                            </tr>
+
+                            <tr>
+                                <td>Allergies:</td>
+                                <td>None</td>
+                            </tr>
+
+                            <tr>
+                                <td>Initial height:</td>
+                                <td>170cm</td>
+                            </tr>
+
+                            <tr>
+                                <td>Initial weight:</td>
+                                <td>65kg</td>
+                            </tr>
+
+                            <tr>
+                                <td>Birthdate:</td>
+                                <td>June 18, 1998</td>
+                            </tr>
+
+                            <tr>
+                                <td>Contact number:</td>
+                                <td>09325555081</td>
+                            </tr>
+
+                            <tr>
+                                <td>Email address:</td>
+                                <td>amorpowers@rocketmail.com</td>
+                            </tr>
+                        </table>
+                    </div>
+
+                    <div id="content-prescriptions">
+                        <textarea placeholder="Please enter your prescriptions here." id="view-patient-prescriptions-textarea"></textarea>
+                        <br>
+                        <button id="edit-prescription-button">Edit</button>
+                    </div>
+
+                    <div id="content-pain-test-results">
+                        <center>
+                            <p>Summary</p>
+                            <p>12 - 21 - 2013</p>
+                            <p>01 - 21 - 2014</p>
+                            <p>04 - 18 - 2014</p>
+                            <p>07 - 26 - 2014</p>
+                            <p>12 - 21 - 2015</p>
+                        </center>
+                    </div>
+
+                    <script>
+                        $(document).ready(function(){
+                            $('#button-personal-info').click(function(){
+                                $('#button-personal-info').css({
+                                    "background-color":"black"
+                                });
+
+                                $('#button-prescriptions').css({
+                                    "background-color":"#ef8a13"
+                                });
+
+                                $('#button-pain-test-results').css({
+                                    "background-color":"#ef8a13"
+                                });
+
+                                $('#button-doctors-list').css({
+                                    "background-color":"#ef8a13"
+                                });
+                            });
+
+                            $('#button-prescriptions').click(function(){
+                                $('#button-personal-info').css({
+                                    "background-color":"#ef8a13"
+                                });
+
+                                $('#button-prescriptions').css({
+                                    "background-color":"black"
+                                });
+
+                                $('#button-pain-test-results').css({
+                                    "background-color":"#ef8a13"
+                                });
+
+                                $('#button-doctors-list').css({
+                                    "background-color":"#ef8a13"
+                                });
+                            });
+
+                            $('#button-pain-test-results').click(function(){
+                                $('#button-personal-info').css({
+                                    "background-color":"#ef8a13"
+                                });
+
+                                $('#button-prescriptions').css({
+                                    "background-color":"#ef8a13"
+                                });
+
+                                $('#button-pain-test-results').css({
+                                    "background-color":"black"
+                                });
+
+                                $('#button-doctors-list').css({
+                                    "background-color":"#ef8a13"
+                                });
+                            });
+
+                            $('#button-doctors-list').click(function(){
+                                $('#button-personal-info').css({
+                                    "background-color":"#ef8a13"
+                                });
+
+                                $('#button-prescriptions').css({
+                                    "background-color":"#ef8a13"
+                                });
+
+                                $('#button-pain-test-results').css({
+                                    "background-color":"#ef8a13"
+                                });
+
+                                $('#button-doctors-list').css({
+                                    "background-color":"black"
+                                });
+                            });
+                        });
+                    </script>
+                </div>
+            </center>
+            </div>
+        </div>
+            <div id="head">
+                <button id="tog">&#9776;</button>
+            </div>
+    </body>
+</html>
