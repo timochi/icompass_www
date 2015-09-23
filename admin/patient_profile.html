@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+        <script type="text/javascript" charset="utf-8" src="../cordova.js"></script>
+        <link rel="stylesheet" type="text/css" href="../css/prima.css">
+        <link rel="stylesheet" type="text/css" href="../css/common.css">
+        <script src="../js/jquery.js"></script>
+        <script src="../js/common.js"></script>
+        <script src="../js/meth.js"></script>
+    </head>
+    <body>
+        <div id="back">
+
+        </div>
+        <div id="fore">
+            <div id="cont">
+            <center>
+                <div id="text-wrapper">
+                    <h1>View Users (a jQuery approach)</h1>
+                    <p id="par">First, let us create a button group using lists.</p>
+                    <ul class="view-users-button-group">
+                        <li class="button" id="button-all">All</li>
+                        <li class="button" id="button-patients">Patients</li>
+                        <li class="button" id="button-doctors">Doctors</li>
+                    </ul>
+
+                    <p id="par">Put the necessary javascript. Ginawa ko lang black yung click color para kita agad. Pakipalitan na lang.</p>
+
+                    <p id="par">Create the layout for the list of users. Begin!</p>
+
+                    <table id="view-users-patient-type">
+                        <tr>
+                            <td id="cell"><img src="../img/patient0.png" width="65%"></td>
+                            <td>
+                                <!--Gawa ka ng panibagong table (4x4) sa loob-->
+                                <table>
+                                    <tr>
+                                        <td>Name: </td>
+                                        <td>Amor C. Powers</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>Diagnosis: </td>
+                                        <td>Some Disease</td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+
+                    <table id="view-users-doctor-type">
+                        <tr>
+                            <td id="cell"><img src="../img/patient0.png" width="65%"></td>
+                            <td>
+                                <!--Gawa ka ng panibagong table (4x4) sa loob-->
+                                <table>
+                                    <tr>
+                                        <td>Name: </td>
+                                        <td>Claudia C. Buenavista</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>Specialty: </td>
+                                        <td>Oncologist</td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+
+                    <script>
+                        $(document).ready(function(){
+                            $('#button-all').click(function(){
+                                $('#button-all').css({
+                                    "background-color":"black"
+                                });
+
+                                $('#button-patients').css({
+                                    "background-color":"#ef8a13"
+                                });
+
+                                $('#button-doctors').css({
+                                    "background-color":"#ef8a13"
+                                });
+
+                                 $('#view-users-patient-type').show();
+                                 $('#view-users-doctor-type').show();
+                            });
+
+                            $('#button-patients').click(function(){
+                                $('#button-all').css({
+                                    "background-color":"#ef8a13"
+                                });
+
+                                $('#button-patients').css({
+                                    "background-color":"black"
+                                });
+
+                                $('#button-doctors').css({
+                                    "background-color":"#ef8a13"
+                                });
+
+                                $('#view-users-patient-type').show();
+                                $('#view-users-doctor-type').hide();
+                            });
+
+                            $('#button-doctors').click(function(){
+                                $('#button-all').css({
+                                    "background-color":"#ef8a13"
+                                });
+
+                                $('#button-patients').css({
+                                    "background-color":"#ef8a13"
+                                });
+
+                                $('#button-doctors').css({
+                                    "background-color":"black"
+                                });
+
+                                $('#view-users-patient-type').hide();
+                                $('#view-users-doctor-type').show();
+                            });
+                        });
+                    </script>
+                </div>
+            </center>
+            </div>
+        </div>
+            <div id="head">
+                <button id="tog">&#9776;</button>
+            </div>
+    </body>
+</html>
