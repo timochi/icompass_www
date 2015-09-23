@@ -63,10 +63,10 @@ body {
 	vertical-align: top;
 }
 
-#table-personal-info #info {
+#table-personal-info .info {
 }
 
-#table-personal-info #label {
+#table-personal-info .label {
     width: 20%;
 }
 
@@ -163,4 +163,43 @@ body {
 
 #view-users-doctor-type #cell {
     width: 20%;
+}
+
+
+.view-patient-button-group {
+    list-style-type: none;
+    padding-bottom: 20px;
+}
+
+.view-patient-button-group .button {
+    display: inline;
+    background-color: #ef8a13;
+    color: #fefeeb;
+    width: 130px;
+    height: 100px;
+    padding: 0.5em;
+}
+
+#view-patient-prescriptions-textarea {
+    margin: 10px;
+    padding: 10px;
+    width: 50%;
+    height: 70px;
+}
+
+#edit-prescription-button {
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+	margin: 15px;
+	font-size: 14pt;
+	background-color: #ef8a13;
+	color: #f0f0f0;
+	border: none;
+}
+
+#content-pain-test-results p {
+    text-align: center;
+    line-height: 1.0;
 }
