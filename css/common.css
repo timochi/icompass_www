@@ -144,3 +144,15 @@ body {
 #register-user-site-loader {
     margin-top: 2em;
 }
+
+.view-users-button-group {
+    list-style-type: none;
+}
+
+.view-users-button-group .button {
+    display: inline-block;
+    background-color: #ef8a13;
+    color: #fefeeb;
+    padding: 0.5em;
+    width: 100px;
+}
