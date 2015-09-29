@@ -36,14 +36,15 @@ body {
 }
 
 #icompass-button {
-	padding: 15px;
+	padding: 10px 10px 10px 10px;
 	margin: 15px;
-	font-size: 16pt;
-	width: 40%;
+	font-size: 85%;
+	width: 30%;
 	background-color: #ef8a13;
 	color: #f0f0f0;
 	border-radius: 3px;
 	border: none;
+    text-align: center;
 }
 
 #button-start-esas:focus {
@@ -221,4 +222,10 @@ body {
 
 .tap-color-table {
     margin: 0px 0px 20px 0px;
+}
+
+.nine-symptoms-list {
+    list-style-type: none;
+    text-align: left;
+    width: 40%;
 }
