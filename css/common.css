@@ -268,7 +268,7 @@ body {
 
 .list-of-doctors-table {
     border-collapse: collapse;
-    width: 100%;
+    width: 95%;
     margin: auto;
 }
 
@@ -276,6 +276,7 @@ body {
     width: 7em;
     height: auto;
     margin-top: 3px;
+    margin-left: 2em;
 }
 
 .list-of-doctors-table td {
@@ -284,10 +285,19 @@ body {
 
 .list-of-doctors-table .pic-column, .list-of-doctors-table .info-column {
     vertical-align: top;
+    padding: 2em 0em 2em 0em;
 }
 
 .list-of-doctors-table .pic-column {
-    width: 30%;
+    /*width: 30%;*/
+    border: 2px solid #d0d0d0;
+    border-right: 0px;
+}
+
+.list-of-doctors-table .info-column {
+    border: 2px solid #d0d0d0;
+    border-left: 0px;
+    width: 100%;
 }
 
 .doctor-info-table-brief {
@@ -299,8 +309,11 @@ body {
 
 .doctor-info-table-brief .info {
     padding-right: 1em;
-    width: 30%;
     vertical-align: text-top;
+}
+
+.doctor-info-table-brief .label {
+    width: 100%;
 }
 
 .doctor-info-table-brief .info, .doctor-info-table-brief .label {
@@ -324,13 +337,18 @@ body {
 .doctor-profile-table img {
     width: 7em;
     height: auto;
-    margin-top: 3px;
+    margin-top: 5px;
 }
 
 .doctor-pic-and-name-table {
     margin: auto;
     width: 100%;
     border-collapse: collapse;
+    border: 2px solid #d0d0d0;
+}
+
+.doctor-pic-and-name-table td {
+    padding: 1em 1em 1em 1em;
 }
 
 .doctor-detailed-info {
