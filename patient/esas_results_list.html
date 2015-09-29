@@ -146,59 +146,59 @@
 
         $('#all-dates-head').click(function(){
             if(allstate == 0) {
-                $('#all-dates-body').show();
+                $('#all-dates-body').slideDown();
                 allstate = 1;
             } else if(allstate == 1) {
-                $('#all-dates-body').hide();
+                $('#all-dates-body').slideUp();
                 allstate = 0;
             }
         });
 
         $('#year-2015-head').click(function(){
             if(y2015state == 0) {
-                $('#year-2015-body').show(); y2015state = 1;
-                $('#year-2014-body').hide(); y2014state = 0;
-                $('#year-2013-body').hide(); y2013state = 0;
-                $('#year-2012-body').hide(); y2012state = 0;
+                $('#year-2015-body').slideDown(); y2015state = 1;
+                $('#year-2014-body').slideUp(); y2014state = 0;
+                $('#year-2013-body').slideUp(); y2013state = 0;
+                $('#year-2012-body').slideUp(); y2012state = 0;
 
             } else if(y2015state == 1) {
-                $('#year-2015-body').hide();
+                $('#year-2015-body').slideUp();
                 y2015state = 0;
             }
         });
 
         $('#year-2014-head').click(function(){
             if(y2014state == 0) {
-                $('#year-2015-body').hide(); y2015state = 0;
-                $('#year-2014-body').show(); y2014state = 1;
-                $('#year-2013-body').hide(); y2013state = 0;
-                $('#year-2012-body').hide(); y2012state = 0;
+                $('#year-2015-body').slideUp(); y2015state = 0;
+                $('#year-2014-body').slideDown(); y2014state = 1;
+                $('#year-2013-body').slideUp(); y2013state = 0;
+                $('#year-2012-body').slideUp(); y2012state = 0;
             } else if(y2014state == 1) {
-                $('#year-2014-body').hide();
+                $('#year-2014-body').slideUp();
                 y2014state = 0;
             }
         });
 
         $('#year-2013-head').click(function(){
             if(y2013state == 0) {
-                $('#year-2015-body').hide(); y2015state = 0;
-                $('#year-2014-body').hide(); y2014state = 0;
-                $('#year-2013-body').show(); y2013state = 1;
-                $('#year-2012-body').hide(); y2012state = 0;
+                $('#year-2015-body').slideUp(); y2015state = 0;
+                $('#year-2014-body').slideUp(); y2014state = 0;
+                $('#year-2013-body').slideDown(); y2013state = 1;
+                $('#year-2012-body').slideUp(); y2012state = 0;
             } else if(y2013state == 1) {
-                $('#year-2013-body').hide();
+                $('#year-2013-body').slideUp();
                 y2013state = 0;
             }
         });
 
         $('#year-2012-head').click(function(){
             if(y2012state == 0) {
-                $('#year-2015-body').hide(); y2015state = 0;
-                $('#year-2014-body').hide(); y2014state = 0;
-                $('#year-2013-body').hide(); y2013state = 0;
-                $('#year-2012-body').show(); y2012state = 1;
+                $('#year-2015-body').slideUp(); y2015state = 0;
+                $('#year-2014-body').slideUp(); y2014state = 0;
+                $('#year-2013-body').slideUp(); y2013state = 0;
+                $('#year-2012-body').slideDown(); y2012state = 1;
             } else if(y2012state == 1) {
-                $('#year-2012-body').hide();
+                $('#year-2012-body').slideUp();
                 y2012state = 0;
             }
         });
