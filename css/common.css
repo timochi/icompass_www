@@ -39,10 +39,10 @@ body {
 	padding: 15px;
 	margin: 15px;
 	font-size: 16pt;
-	width: 70%;
+	width: 40%;
 	background-color: #ef8a13;
 	color: #f0f0f0;
-	border-radius: 5px;
+	border-radius: 3px;
 	border: none;
 }
 
@@ -202,4 +202,19 @@ body {
 #content-pain-test-results p {
     text-align: center;
     line-height: 1.0;
+}
+
+.symptom-description-table {
+    border-collapse: collapse;
+    background-color: #ffffff;
+    margin: 0px 0px 25px 0px;
+}
+
+.symptom-description-table td {
+    border: 1px solid #993300;
+    padding: 5px 15px 5px 15px;
+}
+
+.symptom-description-table > thead > tr > td {
+    text-align: center;
 }
