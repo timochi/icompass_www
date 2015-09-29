@@ -265,3 +265,46 @@ body {
     padding: 10px 10px 10px 10px;
     text-align: center;
 }
+
+.list-of-doctors-table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: auto;
+}
+
+.list-of-doctors-table img {
+    width: 7em;
+    height: auto;
+    margin-top: 3px;
+}
+
+.list-of-doctors-table td {
+    /*border: 1px solid black;*/
+}
+
+.list-of-doctors-table .pic-column, .list-of-doctors-table .info-column {
+    vertical-align: top;
+}
+
+.list-of-doctors-table .pic-column {
+    width: 30%;
+}
+
+.doctor-info-table-brief {
+    border-collapse: collapse;
+    text-align: left;
+    margin: auto;
+    width: 90%;
+}
+
+.doctor-info-table-brief .info {
+    padding-right: 1em;
+    width: 30%;
+    vertical-align: text-top;
+}
+
+.doctor-info-table-brief .info, .doctor-info-table-brief .label {
+    padding-bottom: 1em;
+    line-height: 1.5;
+    font-size: 90%;
+}
