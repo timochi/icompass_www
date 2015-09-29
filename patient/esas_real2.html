@@ -18,11 +18,40 @@
         <div id="fore">
             <div id="cont">
             <center>
-                <form action="index.html">
-                <h1>Pain Test</h1>
-                <img src="../img/esas.jpg" style="width:65%;height:auto;">
-                <br><button id="icompass-button">Done</button>
-                </form>
+                <div id="text-wrapper">
+                    <form action="index.html">
+                        <h1>Pain Test</h1>
+                        <p style="text-align:center;">You indicated that you are experiencing pain. Please tap on the body part on the diagram where the pain is felt.</p>
+
+                        <table class="tap-color-table">
+                            <tr>
+                                <td>1 tap</td>
+                                <td>= <span style="color:#cccc00;">slight pain</span></td>
+                            </tr>
+
+                            <tr>
+                                <td>2 taps</td>
+                                <td>= <span style="color:#ef8a13;">moderate pain</span></td>
+                            </tr>
+
+                            <tr>
+                                <td>3 taps</td>
+                                <td>= <span style="color:#cc3333;">severe pain</span></td>
+                            </tr>
+
+                            <tr>
+                                <td>4 taps</td>
+                                <td>= reset pain level</td>
+                            </tr>
+                        </table>
+
+                        <img src="../img/esas.jpg" style="width:60%;height:auto;">
+
+                        <p style="text-align:center;font-size:10pt;">*Please highlight the body part/s where the pain is felt.</p>
+
+                        <br><button id="icompass-button">Submit</button>
+                    </form>
+                </div>
             </center>
             </div>
         </div>
