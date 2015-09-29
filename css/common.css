@@ -308,3 +308,55 @@ body {
     line-height: 1.5;
     font-size: 90%;
 }
+
+.doctor-profile-table {
+    margin: auto;
+    border-collapse: collapse;
+    margin-top: 2em;
+    width: 60%;
+}
+
+.doctor-profile-table td {
+    border: 0px solid black;
+    line-height: 1.5;
+}
+
+.doctor-profile-table img {
+    width: 7em;
+    height: auto;
+    margin-top: 3px;
+}
+
+.doctor-pic-and-name-table {
+    margin: auto;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.doctor-detailed-info {
+    border-collapse: collapse;
+    margin: auto;
+    width: 100%;
+}
+
+.clinic-hours-table {
+    border-collapse: collapse;
+    margin: 0px 0px 0px -2px;
+    width: 100%;
+}
+
+.day-column {
+    text-indent: 1em;
+    vertical-align: text-top;
+}
+
+.time-column {
+    width: 80%;
+    padding-left: 20px;
+    text-align: right;
+}
+
+.name-column {
+    width: 80%;
+    padding-left: 1em;
+}
