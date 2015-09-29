@@ -230,3 +230,38 @@ body {
     width: 40%;
     line-height: 1.5;
 }
+
+#list-of-doctors-table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+}
+
+#pain-doctor-head {
+    background-color: #f4b374;
+    color: #fefeeb;
+    text-align: center;
+    padding: 10px 10px 10px 10px;
+    font-size: 120%;
+    font-weight: bold;
+}
+
+#pain-doctor-body {
+    padding: 10px 10px 10px 10px;
+    text-align: center;
+}
+
+#other-doctors-head {
+    background-color: #f4b374;
+    color: #fefeeb;
+    text-align: center;
+    padding: 10px 10px 10px 10px;
+    font-size: 120%;
+    font-weight: bold;
+}
+
+#other-doctors-body {
+    padding: 10px 10px 10px 10px;
+    text-align: center;
+}
