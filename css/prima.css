@@ -60,6 +60,7 @@ a{
 
 	position: relative;
 	overflow: auto;
+    overflow-x: hidden;
 	z-index: -1;
 }
 

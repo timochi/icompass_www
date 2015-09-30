@@ -19,6 +19,8 @@
             <div id="cont">
                 <center>
                     <h1>Messages</h1>
+                    <button class="edit-message-button">Edit</button>
+
                     <table class="messages-wrapper-table">
                         <tr>
                             <td class="individual-message-wrapper first-individual-message-wrapper">
@@ -91,8 +93,24 @@
 
 <script>
     $(document).ready(function(){
+        //If any of the messages is clicked:
         $('.individual-message-wrapper-table').click(function(){
             window.location = "message.html";
+        });
+
+        //If the edit-button is clicked:
+        var msg_button_state = "view_mode";
+        $('.edit-message-button').click(function(){
+            if(msg_button_state == "view_mode") {
+                msg_button_state = "edit_mode";
+                $('.edit-message-button').html("Done");
+                $('.messages-wrapper-table').animate({left:"+=3em"}, 200);
+            }
+            else if(msg_button_state == "edit_mode") {
+                msg_button_state = "view_mode";
+                $('.edit-message-button').html("Edit");
+                $('.messages-wrapper-table').animate({left:"-=3em"}, 200);
+            }
         });
     });
 </script>

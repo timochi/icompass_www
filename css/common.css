@@ -420,7 +420,7 @@ body {
 }
 
 .messages-wrapper-table td {
-    /*border: 0px solid black;*/
+    /*border: 1px solid black;*/
 }
 
 .individual-message-wrapper-table {
@@ -428,16 +428,16 @@ body {
 }
 
 .sender-cell {
-    width: 90%;
+    width: 80%;
 }
 
 .date-time-cell {
-    width: 5%;
+    width: 10%;
 }
 
 .right-arrow-cell {
     text-align: center;
-    width: 5%;
+    width: 10%;
 }
 
 .individual-message-wrapper {
@@ -460,4 +460,21 @@ body {
 .first-individual-message-wrapper {
     padding-top: 2em;
     border-top: 2px solid #d0d0d0;
+}
+
+.edit-message-button {
+    padding: 7px 10px 5px 10px;
+	margin: 15px;
+	font-size: 100%;
+	background-color: #ef8a13;
+	color: #f0f0f0;
+	border-radius: 3px;
+	border: none;
+    text-align: center;
+    float: left;
+    width: 5em;
+}
+
+.edit-message-button:focus {
+    outline: none;
 }
