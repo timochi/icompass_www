@@ -33,18 +33,30 @@
         <link rel="stylesheet" href="css/login.css">
         <script type="text/javascript">
     $(document).ready(function(){
-        var tgl = 0;
-            $("#toggle").click(function(){
-                if(tgl===0){
-                    $("#fore").animate({left:"250px"});
-                    tgl=1;
+        $(".lg_form").submit(function(){
+            var uname = $("#uname").val();
+            var pass = $("#pass").val();
+            $.post("http://usthbci-icompass.com/ic_mobile/gandalf.php",{usern:uname,pass:pass},
+                   function(tag){
+                switch(tag){
+                    case "AD":
+                        localStorage.setItem("uname",uname);
+                        window.location.href="admin/index.html";
+                        break;
+                    case "DR":
+                        localStorage.setItem("uname",uname);
+                        window.location.href="doctor/index.html";
+                        break;
+                    case "PT":
+                        localStorage.setItem("uname",uname);
+                        window.location.href="patient/index.html";
+                        break;
+                    default:
+                       $("#notif").text("Invalid login!");
                 }
-                else{
-                    $("#fore").animate({left:"0px"});
-                    tgl=0;
-                }
-
             });
+        return false;
+        });
 
     });
 
@@ -74,11 +86,11 @@
                 <img src="img/logo.jpg" id="logo">
             </div>-->
             <div id="contents">
-                <!--<form class="lg_form" method="post" action="http://usthbci-icompass.com/gandalf.php">-->
-                <form class="lg_form" action="patient/index.html">
+                <form class="lg_form">
                     <img src="img/logo.jpg" id="logo" ><br>
-                        <input type="text" name="uname" class="lg_field" placeholder="Username"><br>
-                        <input type="password" name="pass" class="lg_field" placeholder="Password"><br>
+                    <span id="notif"></span>
+                        <input type="text" id="uname" class="lg_field" placeholder="Username"><br>
+                        <input type="password" id="pass" class="lg_field" placeholder="Password"><br>
                         <button type="submit" class="btn">Login</button>
                 </form>
             </div>
