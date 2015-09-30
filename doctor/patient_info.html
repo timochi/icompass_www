@@ -8,80 +8,10 @@
         <script src="../js/jquery.js"></script>
         <script src="../js/common.js"></script>
         <script src="../js/meth.js"></script>
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
     </head>
-    <body>
-        <div id="back">
-
-        </div>
-        <div id="fore">
-            <div id="cont">
-            <center>
-                <div id="text-wrapper">
-                    <h1>Powers, Amor Capistrano</h1>
-                    <p id="par">Please click on the button group below to start.</p>
-
-                    <form>
-
-                    </form>
-
-                    <!--Create divs for the content of each of the four buttons in the button group-->
-                    <div id="content-personal-info">
-                        <table>
-                            <tr>
-                                <td>Diagnosis:</td>
-                                <td>Some disease</td>
-                            </tr>
-
-                            <tr>
-                                <td>Allergies:</td>
-                                <td>None</td>
-                            </tr>
-
-                            <tr>
-                                <td>Initial height:</td>
-                                <td>170cm</td>
-                            </tr>
-
-                            <tr>
-                                <td>Initial weight:</td>
-                                <td>65kg</td>
-                            </tr>
-
-                            <tr>
-                                <td>Birthdate:</td>
-                                <td>June 18, 1998</td>
-                            </tr>
-
-                            <tr>
-                                <td>Contact number:</td>
-                                <td>09325555081</td>
-                            </tr>
-
-                            <tr>
-                                <td>Email address:</td>
-                                <td>amorpowers@rocketmail.com</td>
-                            </tr>
-                        </table>
-                    </div>
-
-                    <div id="content-prescriptions">
-                        <textarea placeholder="Please enter your prescriptions here." id="view-patient-prescriptions-textarea"></textarea>
-                        <br>
-                        <button id="edit-prescription-button">Edit</button>
-                    </div>
-
-                    <div id="content-pain-test-results">
-                        <center>
-                            <p>Summary</p>
-                            <p>12 - 21 - 2013</p>
-                            <p>01 - 21 - 2014</p>
-                            <p>04 - 18 - 2014</p>
-                            <p>07 - 26 - 2014</p>
-                            <p>12 - 21 - 2015</p>
-                        </center>
-                    </div>
-
-                    <script>
+    <script>
                         $(document).ready(function(){
                             $('#button-personal-info').click(function(){
                                 $('#button-personal-info').css({
@@ -156,7 +86,82 @@
                             });
                         });
                     </script>
-                </div>
+    <body>
+        <div id="back">
+
+        </div>
+        <div id="fore">
+            
+            
+            <div id="cont">
+                <center>
+                    <img src="../img/default-pic.png" id="profile-pic">
+                <h1>Powers, Amor Capistrano</h1>
+                <ul class="nav nav-tabs" >
+                    <li class="active"><a data-toggle="tab" href="#content-personal-info">Info</a></li>
+                    <li><a data-toggle="tab" href="#content-prescriptions">Prescription</a></li>
+                    <li><a data-toggle="tab" href="#content-pain-test-results">ESAS</a></li>
+                </ul>
+        <div class="tab-content">
+                  <div id="content-personal-info" class="tab-pane">
+                        <table>
+                            <tr>
+                                <td>Diagnosis:</td>
+                                <td>Some disease</td>
+                            </tr>
+
+                            <tr>
+                                <td>Allergies:</td>
+                                <td>None</td>
+                            </tr>
+
+                            <tr>
+                                <td>Initial height:</td>
+                                <td>170cm</td>
+                            </tr>
+
+                            <tr>
+                                <td>Initial weight:</td>
+                                <td>65kg</td>
+                            </tr>
+
+                            <tr>
+                                <td>Birthdate:</td>
+                                <td>June 18, 1998</td>
+                            </tr>
+
+                            <tr>
+                                <td>Contact number:</td>
+                                <td>09325555081</td>
+                            </tr>
+
+                            <tr>
+                                <td>Email address:</td>
+                                <td>amorpowers@rocketmail.com</td>
+                            </tr>
+                        </table>
+                    </div>
+
+                    
+
+                    <div id="content-prescriptions" class="tab-pane">
+                        <textarea placeholder="Please enter your prescriptions here." id="view-patient-prescriptions-textarea"></textarea>
+                        <br>
+                        <button id="edit-prescription-button">Edit</button>
+                    </div>
+
+                    <div id="content-pain-test-results" class="tab-pane">
+                        <center>
+                            <p>Summary</p>
+                            <p>12 - 21 - 2013</p>
+                            <p>01 - 21 - 2014</p>
+                            <p>04 - 18 - 2014</p>
+                            <p>07 - 26 - 2014</p>
+                            <p>12 - 21 - 2015</p>
+                        </center>
+                    </div>
+
+             </div>       
             </center>
             </div>
         </div>
