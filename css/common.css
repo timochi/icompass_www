@@ -410,10 +410,12 @@ body {
 
 .messages-wrapper-table {
     border-spacing: 7px;
+    border-collapse: collapse;
 }
 
 .messages-wrapper-table table{
     border-spacing: 7px;
+    border-collapse: collapse;
 }
 
 .messages-wrapper-table td {
@@ -423,4 +425,13 @@ body {
 
 .individual-message-wrapper-table {
     width: 100%;
+}
+
+.sender-cell {
+    width: 70%;
+}
+
+.right-arrow-cell {
+    text-align: center;
+    cursor: pointer;
 }
