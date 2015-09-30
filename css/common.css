@@ -411,6 +411,7 @@ body {
 .messages-wrapper-table {
     border-spacing: 7px;
     border-collapse: collapse;
+    width: 100%;
 }
 
 .messages-wrapper-table table{
@@ -419,19 +420,44 @@ body {
 }
 
 .messages-wrapper-table td {
-    border: 1px solid black;
+    /*border: 0px solid black;*/
 }
-
 
 .individual-message-wrapper-table {
     width: 100%;
 }
 
 .sender-cell {
-    width: 70%;
+    width: 90%;
+}
+
+.date-time-cell {
+    width: 5%;
 }
 
 .right-arrow-cell {
     text-align: center;
+    width: 5%;
+}
+
+.individual-message-wrapper {
+    border-bottom: 2px solid #d0d0d0;
+    padding-top: 2em;
+    padding-right: 1em;
+    padding-bottom: 2em;
+    padding-left: 1em;
     cursor: pointer;
+}
+
+.individual-message-wrapper:hover {
+    background-color: #e0e0e0;
+}
+
+.individual-message-wrapper:active {
+    background-color: #d0d0d0;
+}
+
+.first-individual-message-wrapper {
+    padding-top: 2em;
+    border-top: 2px solid #d0d0d0;
 }

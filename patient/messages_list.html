@@ -17,21 +17,20 @@
         </div>
         <div id="fore">
             <div id="cont">
-                <div id="text-wrapper">
                 <center>
                     <h1>Messages</h1>
                     <table class="messages-wrapper-table">
                         <tr>
-                            <td>
+                            <td class="individual-message-wrapper first-individual-message-wrapper">
                                 <table class="individual-message-wrapper-table">
                                     <tr>
                                         <td rowspan="2" class="sender-cell">Dominador Magtanggol</td>
-                                        <td>9/22/2015</td>
+                                        <td class="date-time-cell">9/22/2015</td>
                                         <td rowspan="2" class="right-arrow-cell">&gt;</td>
                                     </tr>
 
                                     <tr>
-                                        <td>12:01 PM</td>
+                                        <td class="date-time-cell">12:01 PM</td>
                                     </tr>
 
                                     <tr>
@@ -42,16 +41,16 @@
                         </tr>
 
                         <tr>
-                            <td>
+                            <td class="individual-message-wrapper">
                                 <table class="individual-message-wrapper-table">
                                     <tr>
                                         <td rowspan="2" class="sender-cell">Dominador Magtanggol</td>
-                                        <td>10/23/2015</td>
+                                        <td class="date-time-cell">10/23/2015</td>
                                         <td rowspan="2" class="right-arrow-cell">&gt;</td>
                                     </tr>
 
                                     <tr>
-                                        <td>7:11 AM</td>
+                                        <td class="date-time-cell">7:11 AM</td>
                                     </tr>
 
                                     <tr>
@@ -62,16 +61,16 @@
                         </tr>
 
                         <tr>
-                            <td>
+                            <td class="individual-message-wrapper">
                                 <table class="individual-message-wrapper-table">
                                     <tr>
                                         <td rowspan="2" class="sender-cell">Dominador Magtanggol</td>
-                                        <td>11/23/2015</td>
+                                        <td class="date-time-cell">11/23/2015</td>
                                         <td rowspan="2" class="right-arrow-cell">&gt;</td>
                                     </tr>
 
                                     <tr>
-                                        <td>7:11 PM</td>
+                                        <td class="date-time-cell">7:11 PM</td>
                                     </tr>
 
                                     <tr>
@@ -82,7 +81,6 @@
                         </tr>
                     </table>
                 </center>
-                </div>
             </div>
         </div>
             <div id="head">
@@ -93,7 +91,7 @@
 
 <script>
     $(document).ready(function(){
-        $('.right-arrow-cell').click(function(){
+        $('.individual-message-wrapper-table').click(function(){
             window.location = "message.html";
         });
     });
