@@ -10,7 +10,12 @@
         <script src="../js/meth.js"></script>
         <title>Hello World</title>
     </head>
-
+    <style>
+    .pat_list{
+        background-color:white;
+        border-bottom:1px solid #aaaaaa;
+    }
+    </style>
     <body>
         <div id="back">
 
@@ -19,33 +24,72 @@
             <div id="cont">
             <center>
 
-                <h1>List of Patients</h1>
+                
 
                 <!--table for the list of doctors-->
-                <table id="list-doctor-wrapper">
+                <div id="main_pat">
+                <h3 style="background-color:#ef8a13;height:auto;color:white;">Main Patients</h3>
+                    <a href="#">
+                <div class="pat_list">
+                    <table id="list-doctor-wrapper">
                     <tr>
-                        <td id="doctor-pic-column"><a href="info_doc.html"><center><img src="../img/patient0.png" id="doctor-pic"></center></a></td>
+                        <td id="doctor-pic-column"><center><img src="../img/patient0.png" id="thumb-pic"></center></td>
                         <td>
                             <b>Name:</b> Amor C. Powers<br>
                             <b>Specialty:</b> Oncology
                         </td>
                     </tr>
                 </table>
-
-                <table id="list-doctor-wrapper">
+                </div>
+                <div class="pat_list">
+                    <table id="list-doctor-wrapper">
                     <tr>
-                        <td id="doctor-pic-column"><a href="javascript:void(0);"><center><img src="../img/patient0.png" id="doctor-pic"></center></a></td>
+                        <td id="doctor-pic-column"><center><img src="../img/patient0.png" id="thumb-pic"></center></td>
                         <td>
-                            <b>Name:</b> Claudia C. Buenavista<br>
+                            <b>Name:</b> Amor C. Powers<br>
                             <b>Specialty:</b> Oncology
                         </td>
                     </tr>
                 </table>
+                </div>
+                </a>
+                </div>
+                
+                <div id="other_pat">
+                <h3 style="background-color:#ef8a13;height:auto;color:white;">Other Patients</h3>
+                    <a href="#">
+                <div class="pat_list">
+                    <table id="list-doctor-wrapper">
+                    <tr>
+                        <td id="doctor-pic-column"><center><img src="../img/patient0.png" id="thumb-pic"></center></td>
+                        <td>
+                            <b>Name:</b> Amor C. Powers<br>
+                            <b>Specialty:</b> Oncology
+                        </td>
+                    </tr>
+                </table>
+                </div>
+                <div class="pat_list">
+                    <table id="list-doctor-wrapper">
+                    <tr>
+                        <td id="doctor-pic-column"><center><img src="../img/patient0.png" id="thumb-pic"></center></td>
+                        <td>
+                            <b>Name:</b> Amor C. Powers<br>
+                            <b>Specialty:</b> Oncology
+                        </td>
+                    </tr>
+                </table>
+                </div>
+                </a>
+                </div>
+                
+
             </center>
             </div>
         </div>
             <div id="head">
                 <button id="tog">&#9776;</button>
+<center><span class="head_title">List of Patients</span></center>
             </div>
     </body>
 </html>
