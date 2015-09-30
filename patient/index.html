@@ -10,7 +10,15 @@
         <script src="../js/meth.js"></script>
         <title>Hello World</title>
     </head>
-
+    <script>
+    $(document).ready(function(){
+        var uname = localStorage.getItem("uname");
+        $.post("http://usthbci-icompass.com/ic_mobile/patient/pat_info.php",{usern:uname},
+               function(msg){
+                    $("#table-personal-info-wrapper").html(msg);
+                });
+    });
+    </script>
     <body>
         <div id="back">
 
@@ -28,62 +36,7 @@
             <br>
 
             <div id="table-personal-info-wrapper">
-                <table id="table-personal-info">
-                    <tr>
-                        <td class="label">Username:</td>
-                        <td class="info">PTMRL86</td>
-                    <tr>
-
-                    <tr>
-                        <td class="label">Last name:</td>
-                        <td class="info">Miguelino</td>
-                    </tr>
-
-                    <tr>
-                        <td class="label">First name:</td>
-                        <td class="info">Nico Brent</td>
-                    </tr>
-
-                    <tr>
-                        <td class="label">Middle name:</td>
-                        <td class="info">San Jose</td>
-                    </tr>
-
-                    <tr>
-                        <td class="label">Diagnosis:</td>
-                        <td class="info">Leukemia</td>
-                    </tr>
-
-                    <tr>
-                        <td class="info">Allergies:</td>
-                        <td class="label">None</td>
-                    </tr>
-
-                    <tr>
-                        <td class="info">Initial height:</td>
-                        <td class="label">169 cm</td>
-                    </tr>
-
-                    <tr>
-                        <td class="info">Initial weight:</td>
-                        <td class="label">45 kg</td>
-                    </tr>
-
-                    <tr>
-                        <td class="info">Birthdate:</td>
-                        <td class="label">July 26, 1995</td>
-                    </tr>
-
-                    <tr>
-                        <td class="info">Contact num:</td>
-                        <td class="label">09325555081</td>
-                    </tr>
-
-                    <tr>
-                        <td class="info">Email address:</td>
-                        <td class="label">nicomiguelino2014@gmail.com</td>
-                    </tr>
-                </table>
+                
             </div>
         </center>
         </div>
