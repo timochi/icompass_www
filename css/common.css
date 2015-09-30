@@ -407,3 +407,20 @@ body {
 .message-body {
     font-size: 115%;
 }
+
+.messages-wrapper-table {
+    border-spacing: 7px;
+}
+
+.messages-wrapper-table table{
+    border-spacing: 7px;
+}
+
+.messages-wrapper-table td {
+    border: 1px solid black;
+}
+
+
+.individual-message-wrapper-table {
+    width: 100%;
+}
