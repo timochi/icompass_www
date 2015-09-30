@@ -39,7 +39,7 @@
 
         </div>
         <div id="fore">
-            <div id="cont">
+            <div id="cont" ng-app="change_pass_app" ng-controller="change_pass_ctrl">
             <center>
                 <h1>Change Password</h1>
                 <form id="ps_rst">
@@ -69,3 +69,10 @@
             </div>
     </body>
 </html>
+
+<script>
+    var app = angular.module('change_pass_app', []);
+    app.controller('change_pass_ctrl', function($scope) {
+
+    });
+</script>
