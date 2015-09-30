@@ -22,6 +22,11 @@
                 $scope.slider2 = document.getElementById('slider_tiredness').value;
                 $scope.slider3 = document.getElementById('slider_nausea').value;
                 $scope.slider4 = document.getElementById('slider_depression').value;
+                $scope.slider5 = document.getElementById('slider_anxiety').value;
+                $scope.slider6 = document.getElementById('slider_drowsiness').value;
+                $scope.slider7 = document.getElementById('slider_shortness').value;
+                $scope.slider8 = document.getElementById('slider_appetite').value;
+                $scope.slider9 = document.getElementById('slider_wellbeing').value;
             });
         </script>
 
@@ -33,33 +38,91 @@
             <center>
                 <form action="esas_real2.html">
                     <h1>Pain Test</h1>
-                    <h4>Pain ({{slider1}})</h4>
-                    <input type="range" name="pain" min="0" max="10" class="slider" id="slider_pain" ng-model="slider1">
 
-                    <h4>Tiredness ({{slider2}})</h4>
-                    <input type="range" name="tiredness" min="0" max="10" class="slider" id="slider_tiredness" ng-model="slider2">
 
-                    <h4>Nausea ({{slider3}})</h4>
-                    <input type="range" name="nausea" min="0" max="10" class="slider" id="slider_nausea" ng-model="slider3">
+                    <table class="nine-symptoms-table">
+                        <tr>
+                            <td class="slider-column">
+                                <h4>Pain</h4>
+                                <center>
+                                <input type="range" name="pain" min="0" max="10" class="slider" id="slider_pain" ng-model="slider1">
+                                </center>
+                            </td>
+                            <td class="number-column"><input type="number" value="{{slider1}}" ng-model="slider1" class="number" min="0" max="10"></td>
+                        </tr>
 
-                    <h4>Depression ({{slider4}})</h4>
-                    <input type="range" name="depression" min="0" max="10" class="slider" id="slider_depression" ng-model="slider4">
+                        <tr>
+                            <td class="slider-column">
+                                <h4>Tiredness</h4>
+                                <center>
+                                <input type="range" name="tiredness" min="0" max="10" class="slider" id="slider_tiredness" ng-model="slider2">
+                                </center>
+                            </td>
+                            <td class="number-column"><input type="number" value="{{slider2}}" ng-model="slider2" class="number" min="0" max="10"></td>
+                        </tr>
 
-                    <h4>Anxiety ({{slider4}})</h4>
-                    <input type="range" name="depression" min="0" max="10" class="slider" id="slider_depression" ng-model="slider4">
+                        <tr>
+                            <td class="slider-column">
+                                <h4>Nausea</h4>
+                                <center>
+                                <input type="range" name="nausea" min="0" max="10" class="slider" id="slider_nausea" ng-model="slider3">
+                                </center>
+                            </td>
+                            <td class="number-column"><input type="number" value="{{slider3}}" ng-model="slider3" class="number" min="0" max="10"></td>
+                        </tr>
 
-                    <h4>Drowsiness ({{slider4}})</h4>
-                    <input type="range" name="depression" min="0" max="10" class="slider" id="slider_depression" ng-model="slider4">
+                        <tr>
+                            <td class="slider-column">
+                                <h4>Depression</h4>
+                                <center>
+                                <input type="range" name="depression" min="0" max="10" class="slider" id="slider_depression" ng-model="slider4">
+                                </center>
+                            </td>
+                            <td class="number-column"><input type="number" value="{{slider4}}" ng-model="slider4" class="number" min="0" max="10"></td>
+                        </tr>
 
-                    <h4>Shortness of breath ({{slider4}})</h4>
-                    <input type="range" name="depression" min="0" max="10" class="slider" id="slider_depression" ng-model="slider4">
+                        <tr>
+                            <td class="slider-column">
+                                <h4>Anxiety</h4>
+                                <center><input type="range" name="anxiety" min="0" max="10" class="slider" id="slider_anxiety" ng-model="slider5"></center>
+                            </td>
+                            <td class="number-column"><input type="number" value="{{slider5}}" ng-model="slider5" class="number" min="0" max="10"></td>
+                        </tr>
 
-                    <h4>Appetite ({{slider4}})</h4>
-                    <input type="range" name="depression" min="0" max="10" class="slider" id="slider_depression" ng-model="slider4">
+                        <tr>
+                            <td class="slider-column">
+                                <h4>Drowsiness</h4>
+                                <center><input type="range" name="drowsiness" min="0" max="10" class="slider" id="slider_drowsiness" ng-model="slider6"></center>
+                            </td>
+                            <td class="number-column"><input type="number" value="{{slider6}}" ng-model="slider6" class="number" min="0" max="10"></td>
+                        </tr>
 
-                    <h4>Well-being ({{slider4}})</h4>
-                    <input type="range" name="depression" min="0" max="10" class="slider" id="slider_depression" ng-model="slider4">
-                <p><button id="icompass-button">Next</button>
+                        <tr>
+                            <td class="slider-column">
+                                <h4>Shortness of breath</h4>
+                                <center><input type="range" name="shortness" min="0" max="10" class="slider" id="slider_shortness" ng-model="slider7"></center>
+                            </td>
+                            <td class="number-column"><input type="number" value="{{slider7}}" ng-model="slider7" class="number" min="0" max="10"></td>
+                        </tr>
+
+                        <tr>
+                            <td class="slider-column">
+                                <h4>Appetite</h4>
+                                <center><input type="range" name="appetite" min="0" max="10" class="slider" id="slider_appetite" ng-model="slider8"></center>
+                            </td>
+                            <td class="number-column"><input type="number" value="{{slider8}}" ng-model="slider8" class="number" min="0" max="10"></td>
+                        </tr>
+
+                        <tr>
+                            <td class="slider-column">
+                                <h4>Well-being</h4>
+                                <center><input type="range" name="wellbeing" min="0" max="10" class="slider" id="slider_wellbeing" ng-model="slider9"></center>
+                            </td>
+                            <td class="number-column"><input type="number" value="{{slider9}}" ng-model="slider9" class="number" min="0" max="10"></td>
+                        </tr>
+                    </table>
+
+                    <p><button id="icompass-button">Next</button></p>
                 </form>
             </center>
             </div>
@@ -69,3 +132,29 @@
             </div>
     </body>
 </html>
+
+<style>
+    .nine-symptoms-table {
+        width: 50%;
+        margin: auto;
+    }
+
+    .nine-symptoms-table td {
+        border: 0px solid black;
+    }
+
+    .nine-symptoms-table h4 {
+        font-weight: 400;
+        text-align: center;
+    }
+
+    .slider-column {
+        width: 100%;
+    }
+
+    .number-column .number {
+        height: 95%;
+        text-align: center;
+        vertical-align: middle;
+    }
+</style>

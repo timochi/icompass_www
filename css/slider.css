@@ -1,6 +1,6 @@
 .slider {
     -webkit-appearance: none;
-    width: 40%;
+    width: 90%;
 }
 
 .slider::-webkit-slider-thumb {
