@@ -106,8 +106,12 @@ body {
     padding: 5px;
 }
 
-#doctor-pic {
-    width: 7em;
+#thumb-pic {
+    width: 4em;
+    height:4em;
+    border-radius: 100%;
+    border:1px solid #aaaaaa;
+    
 }
 
 
